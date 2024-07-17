@@ -1,39 +1,50 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="0">
+    <mat-sidenav #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="0" [style.width.px]="menuWidth" class="example-sidenav1">
+      <mat-toolbar fxLayout="row" class="logo-toolbar">
+        <a style="margin-left: 8px;" (click)="onLogoClick()" routerLink=".">
+          <img src="eurofins-logo-white.svg" height="22" alt="eurofins-logo">
+        </a>
+        <span class="example-spacer"></span>
+        <button mat-icon-button style="color: white;">
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+      </mat-toolbar>
+      <div class="nav-menu-content">
+        <mat-nav-list>
+          @for (nav of fillerNav; track nav) {
+          <a mat-list-item routerLink="."><span style="color: white !important;">{{nav}}</span></a>
+          }
+        </mat-nav-list>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar class="example-toolbar">
+        <span>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+          </button>
+          <span>My App</span>
+        </span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+      <div style="margin-left: 10px;">
 
 
-<mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
-               [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
-               [fixedBottomGap]="options.value.bottom">
-    {{options.value.fixed ? 'Fixed' : 'Non-fixed'}} Sidenav
-  </mat-sidenav>
+        @for (content of fillerContent; track content) {
+        <p>{{content}}</p>
+        }
 
-  <mat-sidenav-content [formGroup]="options">
-    <mat-toolbar>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon (click) = "sidenav.toggle()">menu</mat-icon>
-      </button>
-      <span>My App</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
-    
-    <p><mat-checkbox formControlName="fixed">Fixed</mat-checkbox></p>
-    <p><mat-form-field>
-      <mat-label>Top gap</mat-label>
-      <input matInput type="number" formControlName="top">
-    </mat-form-field></p>
-    <p><mat-form-field>
-      <mat-label>Bottom gap</mat-label>
-      <input matInput type="number" formControlName="bottom">
-    </mat-form-field></p>
-    <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
-  
-  </mat-sidenav-content>
-</mat-sidenav-container>
-
-<router-outlet />
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

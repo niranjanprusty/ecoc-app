@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+.vs/ProjectSettings.json
+.gitignore
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/ecoc-app/v17/.wsuo
+.vs/ecoc-app/v17/DocumentLayout.json
+.vs/ecoc-app/FileContentIndex/3ad98480-56a6-4d89-9c66-fe3c797b80d9.vsidx

@@ -1,38 +1,109 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  flex: 1;
+    position: fixed;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: rgb(255,255,255);
+    overflow: hidden;
+}
+
+.logo-toolbar {
+    height: 40px;
+    margin-top: 8px;
+    padding: 0 8px;
+    color: rgb(255,255,255);
+    background-color: rgb(0, 56, 131);
+    border-bottom: 1px solid rgba(153,163,198, 0.4);
+}
+
+.toolbar-app-logo {
+  background: rgb(0, 56, 131);
+  color: white;
+  width: 240px;
+}
+
+.example-sidenav1 {
+  background: rgb(0, 56, 131);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 240px;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.mat-drawer {
+  overflow: hidden;
+}
+
+:host ::ng-deep .mat-drawer-inner-container {
+  overflow: hidden;
+}
+
 .example-spacer {
-    flex: 1 1 auto;
-  }
+  flex: 1 1 auto;
+}
 
-  .example-container {  
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.nav-menu-content {
+  overflow: auto;
+  height: 100%;
 
-  
-  .example-sidenav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 240px;
-    background: rgb(0, 56, 131);
-    color: white;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  .example-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .example-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  
+}
+.nav-menu-content::-webkit-scrollbar {
+  width: 7px;
+  visibility: hidden;
+}
+
+.nav-menu-content::-webkit-scrollbar-track {
+  background: rgba(255,255,255, 0.16);
+  //background: red;
+  border: solid 5px transparent;
+  //width: 5px;
+  border-radius: 10px;
+  visibility: visible;
+}
+
+//scroll button
+.nav-menu-content::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 5px 5px rgb(255,255,255, 0.48);
+    border: solid 5px transparent;
+      border-radius: 12px;
+      visibility: visible;
+      background-color:rgb(255, 255, 255, 0.48);
+}
+
+.nav-menu-content::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 10px 10px rgba(255,255,255, 0.64);
+  border: none;
+}
+
+.nav-menu-content:hover::-webkit-scrollbar-button {
+  height: 5px;
+  display: block;
+  background-color: transparent;
+  visibility: visible;
+}
