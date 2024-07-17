@@ -2,7 +2,7 @@
 
   <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="0">
     <mat-sidenav #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
-      fixedTopGap="0" [style.width.px]="menuWidth" class="example-sidenav1">
+      fixedTopGap="0" [style.width.px]="menuWidth" class="example-sidenav">
       <mat-toolbar fxLayout="row" class="logo-toolbar">
         <a style="margin-left: 8px;" (click)="onLogoClick()" routerLink=".">
           <img src="eurofins-logo-white.svg" height="22" alt="eurofins-logo">
@@ -15,7 +15,8 @@
       <div class="nav-menu-content">
         <mat-nav-list>
           @for (nav of fillerNav; track nav) {
-          <a mat-list-item routerLink="."><span style="color: white !important;">{{nav}}</span></a>
+          <a mat-list-item routerLink="/dashboard" routerLinkActive="active"><span
+              style="color: white !important;">{{nav}}</span></a>
           }
         </mat-nav-list>
       </div>
@@ -37,13 +38,9 @@
           <mat-icon>share</mat-icon>
         </button>
       </mat-toolbar>
-      <div style="margin-left: 10px;">
 
-
-        @for (content of fillerContent; track content) {
-        <p>{{content}}</p>
-        }
-
+      <div class="router-container" cdkScrollable>
+        <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>

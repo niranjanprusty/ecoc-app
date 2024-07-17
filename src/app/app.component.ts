@@ -1,10 +1,14 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+
 const SIDE_NAV_WIDTH = 320;
 @Component({
   selector: 'app-root',
@@ -15,6 +19,11 @@ const SIDE_NAV_WIDTH = 320;
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    DashboardComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    HomeComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
