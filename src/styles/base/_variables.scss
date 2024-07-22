@@ -1,0 +1,68 @@
+/**********************************************************/
+/*       global variables
+/*****************************************************************/
+
+$font-size-root: 14px;
+$section-title-font-size: 16px;
+$tab-font-size: 18px;
+$icon-font-size: 20px;
+$toolbar-icon-font-size: 16px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-extra-bold: 800;
+
+$font-icomoon: icomoon;
+
+$toolbar-height: 40px;
+
+$main-container-padding: 30px;
+$section-title-margin: 20px;
+$slider-container-margin: 40px;
+$table-header-padding: 10px;
+$launcher-tab-margin: 70px;
+
+$table-cell-line-height: 18px;
+$table-cell-padding: 8px;
+$table-cell-padding-top: 16px;
+$table-cell-padding-bottom: 16px;
+$table-cell-regular-padding-right: 8px;
+$table-edit-cell-padding-bottom: 6px;
+$table-icon-cell-padding-top: 2px;
+
+$left-column-width: 495px;
+$draggable-item-width: 348px;
+$draggle-item-height: 50px;
+$mat-button-height: 40px;
+$css-icon-size: 40px;
+
+
+$prime-spacer: 1px !default;
+$spacers: (
+  ) !default;
+
+$spacers: map-merge((0: 0,
+      1: ($prime-spacer * 1), //1px
+      2: ($prime-spacer * 2), //2px
+      3: ($prime-spacer * 3), //3px
+      4: ($prime-spacer * 4), //4px
+      5: ($prime-spacer * 5), //5px
+      6: ($prime-spacer * 6), //6px
+      7: ($prime-spacer * 7), //7px
+      8: ($prime-spacer * 8), //8px
+      9: ($prime-spacer * 9), //9px
+      10: ($prime-spacer * 10), //10px
+      15: ($prime-spacer * 15), //15px
+      20: ($prime-spacer * 20), //20px
+      25: ($prime-spacer * 25), //25px
+      30: ($prime-spacer * 30), //30px
+      35: ($prime-spacer * 35), //35px
+      40: ($prime-spacer * 40), //40px
+      45: ($prime-spacer * 45), //45px
+      50: ($prime-spacer * 50), //50px
+      55: ($prime-spacer * 55), //55px
+      60: ($prime-spacer * 60) //60px
+    ),
+    $spacers )

@@ -22,8 +22,8 @@
       </div>
     </mat-sidenav>
 
-    <mat-sidenav-content>
-      <mat-toolbar class="example-toolbar">
+    <div class="side-nav-content">
+      <mat-toolbar style="height: 40px;margin-top: 10px; padding-left: 8px;">
         <span>
           <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
             <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
@@ -39,9 +39,9 @@
         </button>
       </mat-toolbar>
 
-      <div class="router-container" cdkScrollable>
+      <div class="router-container">
         <router-outlet></router-outlet>
       </div>
-    </mat-sidenav-content>
+    </div>
   </mat-sidenav-container>
 </div>

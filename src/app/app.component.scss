@@ -1,3 +1,6 @@
+@import '../../src/styles/base/color';
+@import '../../src/styles/base/variables';
+
 .example-container {
   display: flex;
   flex-direction: column;
@@ -12,6 +15,12 @@
   overflow: hidden;
 }
 
+.side-nav-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: rgb($primary-color-dark);
+}
 
 .logo-toolbar {
     height: 40px;
@@ -29,7 +38,8 @@
 }
 
 .example-is-mobile .example-toolbar {
-  position: fixed;
+  //position: fixed;
+  //height: 100px;
   /* Make sure the toolbar will stay on top of the content as it scrolls past. */
   z-index: 2;
 }
@@ -104,4 +114,6 @@
 .router-container {
   overflow: auto;
   background-color: rgb(255,255,255);
+  margin-top: 20px;
+  margin-left: 10px;
 }

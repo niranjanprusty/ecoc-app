@@ -1,0 +1,81 @@
+/**********************************************************/
+/*    Colour Palette
+/*****************************************************************/
+:root {
+  --primary-color-dark: 0, 56, 131; // #003883
+  --primary-color-medium: 77, 95, 155; // #4D5F9B
+  --primary-color-light: 153, 163, 198; // #99A3C6
+
+  --secondary-color-dark: 210, 109, 15; // #D26D0F
+  --secondary-color-medium: 244, 159, 100; // #F49F64
+  --secondary-color-light: 248, 164, 100; // #F8C8A6
+
+  --grey-shade-dark: 51, 51, 51; // #333333
+  --grey-shade-medium: 102, 102, 102; // #666666
+  --grey-shade-light: 117, 117, 117; // #757575
+
+  --success-color: 6, 131, 42; // #06832A
+  --error-color: 182, 57, 78; // #B6394E
+  --warning-color: 241, 194, 27; // #F1C21B
+  --link-color: 15, 98, 254; // #0F62FE
+
+  --base-color-white: 255, 255, 255; // #ffffff
+  --secondary-background-color: 255, 255, 255; // #ffffff
+  --shadow-color: 51, 51, 51; // #333333
+
+  --table-header-color: 234, 236, 245; //#eaecf5
+  --table-row-color-1: 249, 249, 252; // #f9f9fc
+  --table-row-color-2: 255, 255, 255; // #ffffff
+  --table-row-hover-color: 238, 240, 247; // #eef0f7
+  --table-row-select-color: 238, 240, 247; // #eef0f7
+}
+
+.dark-theme {
+  --primary-color-light: 102, 117, 169;
+
+  --grey-shade-dark: 242, 242, 242;
+  --grey-shade-medium: 204, 204, 204;
+  --grey-shade-light: 191, 191, 191;
+
+  --error-color: 247, 62, 83;
+  --success-color: 111, 214, 136;
+  --warning-color: 255, 204, 1;
+  --link-color: 69, 187, 255;
+
+  --base-color-white: 32, 32, 33;
+  --secondary-background-color: 66, 66, 66;
+  --shadow-color: 0, 0, 0;
+
+  --table-header-color: 45, 45, 46;
+  --table-row-color-1: 32, 32, 33;
+  --table-row-color-2: 38, 38, 39;
+  --table-row-hover-color: 50, 50, 51;
+  --table-row-select-color: 55, 55, 56;
+}
+
+$primary-color-dark: var(--primary-color-dark);
+$primary-color-medium: var(--primary-color-medium);
+$primary-color-light: var(--primary-color-light);
+
+$secondary-color-dark: var(--secondary-color-dark);
+$secondary-color-medium: var(--secondary-color-medium);
+$secondary-color-light: var(--secondary-color-light);
+
+$grey-shade-dark: var(--grey-shade-dark);
+$grey-shade-medium: var(--grey-shade-medium);
+$grey-shade-light: var(--grey-shade-light);
+
+$error-color: var(--error-color);
+$success-color: var(--success-color);
+$warning-color: var(--warning-color);
+$app-link-color: var(--link-color);
+
+$base-color-white: var(--base-color-white);
+$secondary-background-color: var(--secondary-background-color);
+$shadow-color: var(--shadow-color);
+
+$table-header-color: var(--table-header-color);
+$table-row-color-1: var(--table-row-color-1);
+$table-row-color-2: var(--table-row-color-2);
+$table-row-hover-color: var(--table-row-hover-color);
+$table-row-select-color: var(--table-row-select-color);

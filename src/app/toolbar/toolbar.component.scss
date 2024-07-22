@@ -1,0 +1,198 @@
+@import "./src/styles/base/color";
+@import "./src/styles/base/variables";
+
+$iconWidth: 36px;
+
+* {
+  font-size: 13px;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  padding: 0 24px;
+  background-color: rgb($base-color-white);
+  border-bottom: 1px solid rgba($primary-color-light, 0.4);
+}
+
+.sidenav-toggle {
+  display: flex;
+  padding: 0;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+  min-width: $iconWidth;
+
+  mat-icon {
+    font-size: 30px;
+    height: $iconWidth;
+    width: $iconWidth;
+    line-height: $iconWidth;
+    color: rgb($base-color-white);
+  }
+}
+
+.toolbar-height {
+  height: $toolbar-height;
+}
+
+.toolbar-logo {
+  line-height: 24px;
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid rgba($primary-color-light, 0.4);
+}
+
+::ng-deep .mat-button-wrapper {
+  font-variation-settings: "wght"$font-weight-regular;
+}
+
+.divider-line {
+  height: 24px;
+  margin: 0 16px 0 8px;
+  border-right: 1px solid rgb($primary-color-light, 0.4);
+}
+
+.environment {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 2px 4px;
+  margin-right: 16px;
+  border-radius: 4px;
+  background-color: rgba($warning-color, 0.5);
+  font-variation-settings: "wght"$font-weight-semi-bold;
+}
+
+.environment.red {
+  color: rgb($base-color-white);
+  background-color: rgb($error-color);
+}
+
+.environment.orange {
+  background-color: rgba($secondary-color-light, 0.5);
+}
+
+.breadcrum {
+  display: flex;
+  align-items: center;
+
+  .icon-UpArrow {
+    font-size: 16px;
+    margin: 0 4px;
+    color: rgb($grey-shade-light);
+  }
+
+  .module-name {
+    color: rgb($grey-shade-medium);
+  }
+}
+
+// Menu panel customization
+
+.mat-menu-item {
+  font-variation-settings: "wght"$font-weight-regular;
+}
+
+button.mat-menu-item:hover {
+  color: rgb($app-link-color);
+  background: none;
+}
+
+.mat-menu-item::selection {
+  background: none;
+}
+
+.button-border {
+  border-left: 3px solid rgb($app-link-color);
+  color: rgb($app-link-color);
+}
+
+button.mat-menu-item {
+  // width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+
+button.theme-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-slide-toggle {
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.icon-20 {
+  font-size: 20px;
+}
+
+.icon-16 {
+  font-size: $toolbar-icon-font-size;
+}
+
+.toolbar-button {
+  min-width: 0;
+  line-height: 21px;
+  border-radius: 4px;
+  padding: 0 8px;
+  color: rgb($app-link-color);
+  background: rgba($app-link-color, 0.04);
+  border: 1px solid rgba($app-link-color, 0.24);
+}
+
+.user-info,
+.labsite-info {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 0px 8px;
+  border-radius: 15px;
+  background: rgba($grey-shade-light, 0.2);
+}
+
+.labsite-info {
+  border-radius: 4px;
+  background: rgba($primary-color-light, 0.1);
+  border: 1px solid rgba($primary-color-light, 0.4);
+}
+
+::ng-deep .more-menu.mat-menu-panel {
+  min-width: 240px;
+}
+
+.display-settings {
+  padding: 10px 5px 0;
+  margin: 0 10px;
+  border-top: 1px solid rgba(var(--primary-color-light), 0.4);
+  border-bottom: 1px solid rgba(var(--primary-color-light), 0.4);
+
+  .title {
+    color: rgb($grey-shade-light);
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .mat-menu-item {
+    height: 28px;
+    line-height: 28px;
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+.triangle_down {
+  display: inline-block;
+  margin-left: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgb($app-link-color);
+}
