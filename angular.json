@@ -68,7 +68,8 @@
               "buildTarget": "ecoc-app:build:production"
             },
             "development": {
-              "buildTarget": "ecoc-app:build:development"
+              "buildTarget": "ecoc-app:build:development",
+              "port": 4500
             }
           },
           "defaultConfiguration": "development"
