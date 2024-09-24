@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "-": "^0.0.1",
     "@angular/animations": "^18.1.0",
     "@angular/cdk": "^18.1.0",
     "@angular/common": "^18.1.0",
@@ -20,7 +21,13 @@
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
+    "@types/lodash": "^4.17.7",
+    "dexie": "^4.0.8",
+    "dexie-observable": "^4.0.1-beta.13",
+    "lodash": "^4.17.21",
     "rxjs": "~7.8.0",
+    "save": "^2.9.0",
+    "save-dev": "^0.0.1-security",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },

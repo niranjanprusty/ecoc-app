@@ -14,8 +14,11 @@
       </mat-toolbar>
       <div class="nav-menu-content">
         <mat-nav-list>
-          @for (nav of fillerNav; track nav) {
-          <a mat-list-item routerLink="/dashboard" routerLinkActive="active"><span
+          <a mat-list-item routerLink="/indexdb-demo" routerLinkActive="active"><span
+            style="color: white !important;">Index DB Demo</span></a>
+
+          @for (nav of fillerNav; track $index) {
+          <a mat-list-item routerLink="/dashboard/{{$index+1}}" routerLinkActive="active"><span
               style="color: white !important;">{{nav}}</span></a>
           }
         </mat-nav-list>

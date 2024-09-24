@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 
+
 const SIDE_NAV_WIDTH = 320;
 @Component({
   selector: 'app-root',
